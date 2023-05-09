@@ -1,9 +1,9 @@
-﻿List<Contato> listaDeContatos = new List<Contato>();
+List<Contato> listaDeContatos = new List<Contato>();
 var escolha = "0";
 
 while(escolha != "3"){
 
-        Console.WriteLine("Bem vindo a agenda! \nEscolha uma das opções: \n1 - Cadastrar \n2 - Listar \n3 - Sair");
+        Console.WriteLine("\nBem vindo a agenda! \nEscolha uma das opções: \n1 - Cadastrar \n2 - Listar \n3 - Sair");
         escolha = Console.ReadLine();
 
             if(escolha == "1"){
@@ -22,13 +22,17 @@ while(escolha != "3"){
 
             if(escolha == "2"){
 
-                Console.WriteLine("Lista de contatos:");
+                Console.WriteLine("\nLista de contatos:");
+                
                 foreach(Contato contato in listaDeContatos){
                 Console.WriteLine(contato.Nome);
                 Console.WriteLine(contato.Telefone);
                 }
-
-            }
+             
+             }   
+             else{
+                Console.WriteLine("Opção inválida!");
+            } 
    
 }
 
