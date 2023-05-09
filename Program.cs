@@ -30,7 +30,7 @@ while(escolha != "3"){
                 }
              
              }   
-             else{
+             if(escolha != "1" && escolha != "2" && escolha != "3"){
                 Console.WriteLine("Opção inválida!");
             } 
    
